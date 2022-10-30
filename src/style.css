@@ -1,52 +1,50 @@
-html{
-   
-
+html,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-image: linear-gradient( 135deg, #FFCF71 10%, #2376DD 100%);
-   
-    height: 100%;
-   
-}
-.app{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   
+body {
+  background-image: linear-gradient(135deg, #ffcf71 10%, #2376dd 100%);
 
+  height: 100vh;
 }
-h1{
-    color: white;
-    font-family: monospace;
-    font-size: 40px;
-    font-weight: 400;
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.main{
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+h1 {
+  color: white;
+  font-family: monospace;
+  font-size: 40px;
+  font-weight: 400;
 }
-#editor{
-    background-color: white;
-    width: 30vw;
-    height: 40vh;
-    padding: 20px;
-    font-family: monospace ;
-    margin: 0px 20px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
-    
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
-#preview{
-    background-color: white;
-    width: 40vw;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    height: 70vh;
-    overflow: scroll;
+#editor {
+  background-color: white;
+  width: 30vw;
+  height: 40vh;
+  padding: 20px;
+  font-family: monospace;
+  margin: 0px 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
-#preview img{
-    max-width: 400px;
-    
+#preview {
+  background-color: white;
+  width: 40vw;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  height: 70vh;
+  overflow-y: scroll;
+}
+#preview img {
+  max-width: 400px;
 }
